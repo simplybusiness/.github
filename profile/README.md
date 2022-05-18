@@ -1,4 +1,4 @@
-![Simply Business Tech Logo](../images/tech_SB_logo.jpg?raw=true)
+![Simply Business Tech Logo](./images/tech_SB_logo.jpg?raw=true)
 
 ## Get a quote for your small business
 
