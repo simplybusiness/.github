@@ -1,4 +1,4 @@
-![Simply Business Logo](https://content.energage.com/company-images/SE99080/SE99080_photo_01_twp.png)
+![Simply Business Tech Logo](../images/tech_SB_logo.jpg?raw=true)
 
 ## Get a quote for your small business
 
@@ -7,6 +7,6 @@
 
 ## Learn more about our tech team
 
-* [SB Tech](www.tech.sb)
+* [SB Tech](https://www.tech.sb)
 * [Our tech blog](https://www.simplybusiness.co.uk/about-us/tech/)
 * [Tech Jobs at SB](https://www.simplybusiness.co.uk/about-us/careers/jobs/)
