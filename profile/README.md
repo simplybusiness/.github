@@ -2,8 +2,8 @@
 
 ## Get a quote for your small business
 
-* [Quotes for UK businesses](quote.simplybusiness.co.uk/)
-* [Quotes for US businesses](quote.simplybusiness.com/)
+* [Quotes for UK businesses](https://quote.simplybusiness.co.uk/)
+* [Quotes for US businesses](https://quote.simplybusiness.com/)
 
 ## Learn more about our tech team
 
