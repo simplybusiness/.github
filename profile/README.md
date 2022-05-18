@@ -7,6 +7,6 @@
 
 ## Learn more about our tech team
 
-* [SB Tech](www.tech.sb)
+* [SB Tech](https://www.tech.sb)
 * [Our tech blog](https://www.simplybusiness.co.uk/about-us/tech/)
 * [Tech Jobs at SB](https://www.simplybusiness.co.uk/about-us/careers/jobs/)
