@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: .github
+  title: GitHub Public page
+  annotations:
+    github.com/project-slug: simplybusiness/.github
+spec:
+  type: misc
+  lifecycle: production
