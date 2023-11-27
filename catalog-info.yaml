@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: .github
+  name: github-public
   title: GitHub Public page
   annotations:
     github.com/project-slug: simplybusiness/.github
