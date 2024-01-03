@@ -3,8 +3,6 @@ kind: Component
 metadata:
   name: github-public
   title: GitHub Public page
-  annotations:
-    github.com/project-slug: simplybusiness/.github
 spec:
   type: misc
   lifecycle: production
