@@ -1,0 +1,39 @@
+name: Huxley SAST Tools
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+
+concurrency: huxley-sast-tools-
+
+env:
+  REPOSITORY: 
+
+jobs:
+  SAST-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: 
+          aws-secret-access-key: 
+          aws-region: 
+      - name: SAST Tools
+        uses: aws-actions/aws-codebuild-run-build@v1
+        with:
+          project-name: 
+          buildspec-override: _pipeline/stage_sast_tools.yml
+          env-vars-for-codebuild: ENVIRONMENT_OVERRIDE
+        env:
+          ENVIRONMENT_OVERRIDE: dev

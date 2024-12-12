@@ -1,0 +1,28 @@
+defaults: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 2
+  timeout: 5000
+  host: <%= ENV["BNW_RDS_AURORA_POSTGRES_HOST"] %>
+  username: <%= ENV["BNW_RDS_AURORA_POSTGRES_USERNAME"] %>
+  database: <%= ENV["BNW_RDS_AURORA_POSTGRES_DATABASE"] %>
+  port: 5432
+  reconnect: true
+
+development:
+  <<: *default
+  host: "pghost"
+  username: "template"
+  database: "templatedb"
+
+integration:
+  <<: *default
+  aws_rds_iam_auth_token_generator: default
+
+staging:
+  <<: *default
+  aws_rds_iam_auth_token_generator: default
+
+production:
+  <<: *default
+  aws_rds_iam_auth_token_generator: default

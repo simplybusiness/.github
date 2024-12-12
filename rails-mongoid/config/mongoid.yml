@@ -1,0 +1,44 @@
+development:
+  clients:
+    default:
+      database: mongoid
+      hosts: localhost:27017
+
+integration:
+  clients:
+    default:
+      database: <%= "#{ENV['APP_NAME']&.split('-')&.join('_')}_migrations" %>
+      hosts: <%= ENV['MONGO_ATLAS_HOSTS']&.split(' ') %>
+      options:
+        ssl: true
+        auth_source: "$external"
+        auth_mech: :aws
+        write:
+          w: "majority"
+          wtimeout: 5000
+
+staging:
+  clients:
+    default:
+      database: <%= "#{ENV['APP_NAME']&.split('-')&.join('_')}_staging" %>
+      hosts: <%= ENV['MONGO_ATLAS_HOSTS']&.split(' ') %>
+      options:
+        ssl: true
+        auth_source: "$external"
+        auth_mech: :aws
+        write:
+          w: "majority"
+          wtimeout: 5000
+
+production:
+  clients:
+    default:
+      database: <%= "#{ENV['APP_NAME']&.split('-')&.join('_')}_production" %>
+      hosts: <%= ENV['MONGO_ATLAS_HOSTS']&.split(' ') %>
+      options:
+        ssl: true
+        auth_source: "$external"
+        auth_mech: :aws
+        write:
+          w: "majority"
+          wtimeout: 5000
