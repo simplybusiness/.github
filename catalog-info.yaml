@@ -4,5 +4,5 @@ metadata:
   name: github-public
   title: GitHub Public page
 spec:
-  type: misc
+  type: documentation
   lifecycle: production
